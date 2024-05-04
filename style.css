@@ -1,0 +1,39 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color:#86198f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p {
+    color: white;
+}
+
+.makeRightList {
+    display: grid;
+    grid-template-columns: auto  1fr;
+    align-items: center;
+    gap: 10px;
+}*/
+
+* {
+    border: 1px solid red;
+}
+
