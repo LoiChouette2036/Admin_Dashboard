@@ -3,8 +3,10 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-
+    font-family: 'Roboto', sans-serif;
 }
+
+
 
 .container {
     min-height: 100%;
@@ -16,9 +18,12 @@ body{
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background-color:#86198f;
+    background-color:#2563eb;
+    padding-left: 20px;
+    font-weight: bold;
 }
 
+/*display for list and text*/
 ul {
     list-style-type: none;
     padding: 0;
@@ -28,6 +33,7 @@ p {
     color: white;
 }
 
+/*List without useless dot*/
 .makeRightList {
     display: grid;
     grid-template-columns: auto  1fr;
@@ -35,6 +41,45 @@ p {
     gap: 10px;
 }
 
+/*SideBare Header Part*/
+.up_logo {
+    display: grid;
+    grid-template-columns: auto  1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.up_logo p {
+    font-size: 25px;
+}
+
+.up_logo_img {
+    min-height: 50px;
+    min-width: 50px;
+}
+
+/*SideBare Content*/
+
+img {
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.makeRightList {
+    display: grid;
+    gap: 20px;
+    margin-left: 15px;  /*to align with the up_logo*/
+}
+
+.down_parameters{
+    padding-top: 10px;
+}
+
+.up_parameters {
+    padding-top: 5px;
+}
+
+/*MainContent Part*/
 .main_content {
     background-color: #d1d5db;
 }
