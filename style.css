@@ -29,7 +29,7 @@ ul {
     padding: 0;
 }
 
-p {
+.sidebar p {
     color: white;
 }
 
@@ -81,9 +81,133 @@ img {
 
 /*Header Part*/
 
+/*Header up part*/
 
+/*Header up left side part*/
+
+.header p {
+    font-weight: bold;
+}
+
+.searchBarHeaderLogo,
+.notificationlogo
+{ /*to resize photo which were too big*/
+    max-height: 25px;
+    max-width: 25px;
+}
+
+input[type="text"] {
+    background-color: #f0f0f0;
+    width: 80%; /* Responsive width */
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    outline: none; /* Removes the default focus outline */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+    width: 70%;
+}
+
+input[type="text"]:focus {/*when we click on the bar blue is showed*/
+    border-color: #66afe9;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.header {
+    padding-left: 10px;
+}
+
+.header_up,
+.header_down{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+
+.form_searchBar {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.search_stuff{
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Header up right side part*/
+
+.icone_stuff{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 15px;
+}
+
+/*Header Down*/
+
+.header_down {
+    justify-content: space-between;
+}
+
+/*Header Down Left*/
+
+.info_profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.idProfilelogoDown {
+    grid-column: 1 / 2;
+}
+
+.largeText {
+    font-size: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.smallText,
+.largeText {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header down right*/
+
+.button_profile{
+    align-self: center;
+}
+
+.button_header_right {
+    display: grid;
+    grid-template-rows: 1r;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
 
 /*MainContent Part*/
+
 .main_content {
     background-color: #d1d5db;
 }

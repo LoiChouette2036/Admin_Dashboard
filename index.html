@@ -69,23 +69,36 @@
         <div class="header">
 
             <div class="header_up">
-                <img class="searchBarHeaderLogo" src="image/magnify.svg" alt="">
-                <div class="searchBarHeader"></div>
-
-                <img class="notificationlogo" src="image/bell-ring-outline.svg" alt="bell-ring logo">
-                <img class="idProfilelogoUp" src="" alt="">
-                <p>Daniel Dupont</p>
-
+                <div class="search_stuff">
+                    <img class="searchBarHeaderLogo" src="image/magnify.svg" alt="">
+                    <form class="form_searchBar" action="/search" method="get">
+                        <input type="text" name="q" placeholder="Search...">
+                    </form>
+                </div>
+                
+                <div class="icone_stuff">
+                    <img class="notificationlogo" src="image/bell-ring-outline.svg" alt="bell-ring logo">
+                    <img class="idProfilelogoUp" src="" alt="">
+                    <p>Daniel Dupont</p>
+                </div>
             </div>
 
             <div class="header_down">
 
-                <img class="idProfilelogoDown" src="" alt="">
-                <p>Daniel Dupont (@daniel)</p>
-                <div class="button_header_right">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                <div class="info_profile">
+                    <img class="idProfilelogoDown" src="" alt="">
+                    <div class="text">
+                        <p class="smallText">Hi there,</p>
+                        <p class="largeText">Daniel Dupont (@daniel)</p>
+                    </div>  
+                </div>
+                
+                <div class="button_profile">
+                    <div class="button_header_right">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
                 </div>
 
             </div>
