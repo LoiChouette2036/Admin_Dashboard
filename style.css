@@ -12,7 +12,7 @@ body{
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 1fr;
 }
 
 .sidebar {
@@ -127,7 +127,9 @@ button:hover {
 }
 
 .header {
-    padding-left: 10px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-left: 30px;
 }
 
 .header_up,
@@ -219,7 +221,8 @@ button:hover {
     background-color: #d1d5db;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 30px;
 }
 
 .projects {
@@ -238,21 +241,21 @@ button:hover {
     max-width: 25px;
 }
 
-
 .box {
-    height: 50px;
-    width: 50px;
+    border: 1px solid red;
+}
+
+.projects {
+    resize: both;
+    overflow: auto;
     display: grid;
-    grid-template-columns: 10px 1fr;
-}
-
-.box_content{
-    background-color: orange ;
-    grid-column: 1 / 2;
-}
-
-.box_content{
-    grid-column: 2 / 3;
+    gap:10px;
+    background-color: white;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: 0;
+    padding: 0;
+    resize: none;
 }
 
 * {
