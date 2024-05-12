@@ -159,6 +159,9 @@ button:hover {
     align-items: center;
     gap: 15px;
 }
+.idProfilelogoUp{
+    border: solid green 1px;
+}
 
 /*Header Down*/
 
@@ -175,6 +178,7 @@ button:hover {
 
 .idProfilelogoDown {
     grid-column: 1 / 2;
+    border: green 1px solid;
 }
 
 .largeText {
@@ -197,13 +201,14 @@ button:hover {
 
 .button_profile{
     align-self: center;
+    padding-right: 50px;
 }
 
 .button_header_right {
     display: grid;
     grid-template-rows: 1r;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 30px;
 }
 
 /*MainContent Part*/
