@@ -244,8 +244,8 @@ button:hover {
 }
 
 .main_content img {
-    max-height: 25px;
-    max-width: 25px;
+    max-height: 30px;
+    max-width: 30px;
 }
 
 .projects {
@@ -286,8 +286,9 @@ button:hover {
     display: flex;
     justify-content: end;
     align-self: end;
-    gap: 20px;
-    padding-bottom: 15px;
+    gap: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
 }
 
 
