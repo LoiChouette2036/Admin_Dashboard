@@ -237,7 +237,7 @@ button:hover {
     grid-column: 2 / 3;
 }
 
-/*box part*/
+/*position of box, main content disposition*/
 
 .main_content{
     padding: 20px;
@@ -246,13 +246,6 @@ button:hover {
 .main_content img {
     max-height: 25px;
     max-width: 25px;
-}
-
-.box {
-    box-sizing: border-box;
-    border: 1px solid red;
-    background-color: white;
-    
 }
 
 .projects {
@@ -266,14 +259,50 @@ button:hover {
     /*resize: none;*/
 }
 
-* {
-    border: 1px solid red;
+/*box part*/
+
+.box {
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10px 1fr;   
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.box_background_color {
+    grid-column: 1 / 2;
+    background-color: orange;
+}
+
+.box_content {
+    grid-column: 2 / 3;
+    padding-left: 5px;
+    display:grid;
+}
+
+.image_box_content{
+    display: flex;
+    justify-content: end;
+    align-self: end;
+    gap: 20px;
+    padding-bottom: 15px;
 }
 
 
 /*main content right part*/
 
+.information{
+    padding-left: 10px;
+}
+
 .announcements,
 .trending {
     background: white;
+}
+
+
+* {
+    border: 1px solid red;
 }
