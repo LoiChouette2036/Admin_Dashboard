@@ -269,12 +269,15 @@ button:hover {
     grid-template-columns: 10px 1fr;   
     padding-bottom: 0;
     margin-bottom: 0;
-    
+    border-radius: 20px; /* Adjust this value as needed */
+    overflow: hidden; /* Ensure child elements respect the border radius */
 }
 
 .box_background_color {
     grid-column: 1 / 2;
     background-color: orange;
+    border-radius: 20px 0 0 20px; /* Adjust this value to match the parent */
+    
 }
 
 .box_content {
@@ -304,8 +307,13 @@ button:hover {
 .announcements,
 .trending {
     background: white;
+    padding: 20px;
+    border-radius: 20px;
 }
 
+.announcements {
+
+}
 
 /* {
     border: 1px solid red;
