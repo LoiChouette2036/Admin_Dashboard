@@ -161,9 +161,7 @@ button:hover {
     align-items: center;
     gap: 15px;
 }
-.idProfilelogoUp{
-    border: solid green 1px;
-}
+
 
 /*Header Down*/
 
@@ -173,15 +171,19 @@ button:hover {
 
 /*Header Down Left*/
 
-.info_profile{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+.orange-ball-headerDown{
+    width: 63px;
+    height: 63px;
+    background-color: orange;
+    border-radius: 50%; /* Rend le div circulaire */
 }
 
-.idProfilelogoDown {
-    grid-column: 1 / 2;
-    border: green 1px solid;
+.info_profile{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
 }
+
 
 .largeText {
     font-size: 20px;
@@ -304,10 +306,15 @@ button:hover {
     gap: 20px;
 }
 
-.announcements,
-.trending {
+.announcements{
     background: white;
     padding: 0px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.trending{
+    padding: 20px;
+    background-color: white;
     border-radius: 20px;
 }
 
@@ -318,8 +325,51 @@ button:hover {
     margin: 20px 0; /* Adds spacing above and below the line */
 }
 
-.announcements {
+.profil{
+    /*display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-column-gap: 10px;*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+
+/* Styles for the balls */
+#orange-ball {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%; /* Rend le div circulaire */
+}
+
+#orange-ball-trending{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%; /* Rend le div circulaire */
+}
+
+#blue-ball{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%; /* Rend le div circulaire */
+}
+
+#gray-ball{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%; /* Rend le div circulaire */
+}
+
+#pink-ball{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 50%; /* Rend le div circulaire */
 }
 
 * {
