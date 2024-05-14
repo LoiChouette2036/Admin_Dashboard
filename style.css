@@ -307,14 +307,21 @@ button:hover {
 .announcements,
 .trending {
     background: white;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     border-radius: 20px;
+}
+
+.grey-line {
+    border: none;
+    height: 1px;
+    background-color: grey;
+    margin: 20px 0; /* Adds spacing above and below the line */
 }
 
 .announcements {
 
 }
 
-/* {
+* {
     border: 1px solid red;
 }
